@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Unbounded&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background-image: url('./static/images/index-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header css */
+
+.header-container{
+    display: flex;
+    position: absolute;
+    font-family: "Unbounded";
+    z-index: 20;
+    width: 100vw;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.233);
+}
+
+.header-logo-div{
+    max-height: 80px;
+    aspect-ratio: 3/1;
+    overflow: hidden;
+    position: absolute;
+    object-fit: contain;
+}
+
+.header-logo-div img{
+    object-fit: contain;
+    height: 80px;
+    cursor: pointer;
+}
+
+.header-btns-div{
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+.header-btn{
+    padding: 8px;
+    margin-right: 40px;
+    background-color: rgba(255, 255, 255, 0.541);
+    border: 0px;
+    border-radius: 4px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+    font-family: "Unbounded";
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.header-btn:hover{
+    background-color: rgba(52, 52, 52, 0.275);
+    box-shadow: 0px 0px 5px 2px rgba(188, 188, 188, 0.384);
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+    color: aliceblue;
+}
+
+.popular-place-icon{
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Container css */
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    clip-path: polygon(0 0, 112% 0, 0% 100%, 0 100%);
+    /* clip-path: polygon(0% 0%, 100% 0%, 52% 48%, 0 100%, 100% 0, 100% 0, 87% 2%, 79% 5%, 72% 9%, 66% 14%, 60% 21%, 56% 28%, 53% 39%, 50% 55%, 49% 62%, 47% 71%, 45% 78%, 42% 83%, 38% 88%, 34% 91%, 27% 95%, 19% 98%, 11% 99%, 0 100%); */
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.main-text{
+    font-size: 10rem;
+    position: absolute;
+    left: 25vw;
+    top: 30vh;
+    letter-spacing: 2px;
+    line-height: 95%;
+    font-family: "EB Garamond";
+    text-align: center;
+    mix-blend-mode: color-burn;
+}
+
+#main-text-1{
+    z-index: 15;
+    color: rgba(102, 102, 102, 0.645);
+    /* display: none; */
+    text-shadow: 0px 0px 2px rgba(69, 69, 69, 0.168);
+}
+#main-text-2{
+    opacity: 0.5;
+    color: rgba(83, 83, 83, 0.771);
+    text-shadow: 0px 0px 3px rgba(64, 64, 64, 0.938);
+    /* display: none; */
+}
+
+.go-div{
+    position: absolute;
+    bottom: 15%;
+    left: 49vw;
+}
+
+.go {
+    color: rgba(255, 255, 255, 0.693);
+    border-radius: 100vw;
+    transition: 0.7s ease-out;
+    font-size: 1.8rem;
+}
+
+.go:hover{
+    background-color: rgba(188, 188, 188, 0.468);
+    color: rgba(0, 0, 0, 0.707);
+    transform: scale(1.7);
+    animation: none;
+}

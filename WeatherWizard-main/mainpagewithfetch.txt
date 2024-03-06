@@ -1,0 +1,32 @@
+import React, { useState} from "react";
+
+export const Mainpage = () => {
+    const [place, setPlace] = useState([]);
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '3b1c31a0b2msha6b07f1cafb41c5p15bb2fjsnabab5add61ab',
+            'X-RapidAPI-Host': 'yahoo-weather5.p.rapidapi.com'
+        }
+    };
+    
+    fetch('https://yahoo-weather5.p.rapidapi.com/weather?location=sunnyvale&format=json&u=f', options)
+        .then(response => response.json())
+        .then((data) => {
+            console.log(data);
+            setPlace([
+                data.location.city,
+                data.location.region
+            ])
+        })
+        .catch(err => console.error(err));
+
+    return (
+        <>
+            Hello World
+            <br />{"city -> " + place[0]}
+            <br />{"region -> " + place[1]}
+        </>
+    );
+
+};

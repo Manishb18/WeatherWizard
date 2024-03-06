@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap');
+
+body{
+    overflow-y:scroll;
+}
+
+.doc-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+.doc-heading-div{
+    background-color: rgba(154, 154, 255, 0.422);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    height: 80px;
+    text-align: center;
+}
+
+.doc-txt-headings{
+    display: block;
+    /* margin-top: 40px; */
+    padding: 5px;
+    color: white;
+    background-image: linear-gradient(
+        90deg,
+        red,
+        orange, 
+        yellow, 
+        rgb(255, 0, 204), 
+        rgb(157, 0, 255), 
+        blue, 
+        red);
+        background-size: 200%;
+        border-radius: 5px;
+        margin-inline: 30px;
+}
+
+#preface-heading{
+    animation: gradient 10s linear infinite;
+}
+
+#development-heading{
+    animation: gradient 10s linear infinite 1s;
+}
+
+#functionality-heading{
+    animation: gradient 10s linear infinite 2s;
+}
+
+@keyframes gradient{
+    to{
+        background-position: 200% center;
+    }
+}
+
+.doc-txt, .doc-txt-headings, .development-data{
+    text-align: center;
+}
+
+.doc-txt-headings{
+    margin-top: 30px;
+}
+
+.doc-txt, .development-data{
+    margin-inline: 30px;
+    /* padding-top: 10px; */
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.104);
+}
+
+.doc-welcome{
+    margin-top: 30px;
+}
+
+.doc-data-div{
+    display: flex;
+    flex-direction: column;
+    /* outline: 2px solid red; */
+    width: 100%;
+}
+
+.doc-data-section{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    line-height: 150%;
+    word-spacing: 0.5rem;
+}
+
+.doc-txt-div{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.functionality-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.functionality-card-row{
+    display: flex;
+}
+
+.functionality-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgba(210, 210, 210, 0.315);
+    margin: 5vh 5%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+    box-shadow: 0px 0px 10px rgba(131, 131, 131, 0.482);
+}
+
+@media (orientation:portrait){
+    .functionality-card-row{
+        flex-direction: column;
+    }
+    .functionality-card{
+        width: 100%;
+        margin: 5vh;
+    }
+    .doc-heading{
+        display: none;
+    }
+}
+
+.functionality-card-head{
+    width: 100%;
+    background-color: rgba(68, 91, 138, 0.344);
+    margin-top: 20px;
+}
+
+.functionality-card-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.functionality-steps{
+    text-align: center;
+    margin: 10px;
+    font-size: 1.2rem;
+    /* color: aliceblue; */
+}
+
+.functionality-sub-steps{
+    margin-top: 10px;
+    text-align: center;
+    /* color: antiquewhite; */
+}
+
+.functionality-image{
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.473);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.development-data sup{
+    color: blue;
+}
+
+.doc-links:hover{
+    cursor: pointer;
+    color: #ff0099; 
+}

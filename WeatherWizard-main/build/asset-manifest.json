@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.36377582.css",
+    "main.js": "/static/js/main.9e2cb592.js",
+    "static/js/787.ef10e2cf.chunk.js": "/static/js/787.ef10e2cf.chunk.js",
+    "static/media/BlizzardWeather.mp4": "/static/media/BlizzardWeather.d1a11a5bf240953523c1.mp4",
+    "static/media/SunnyWeather.mp4": "/static/media/SunnyWeather.1adee57fe89544cd5a84.mp4",
+    "static/media/StormWeather.mp4": "/static/media/StormWeather.58ec33ca1a5e7c66ec30.mp4",
+    "static/media/index-bg.png": "/static/media/index-bg.bd4f1515a7e14d0bdcda.png",
+    "static/media/PleasantWeather.mp4": "/static/media/PleasantWeather.b36162f17ab3e7a4f637.mp4",
+    "static/media/RainyWeather.mp4": "/static/media/RainyWeather.a336b5d096854a647587.mp4",
+    "static/media/CoolCloudyWeather.mp4": "/static/media/CoolCloudyWeather.9cd236089b96bcad3af4.mp4",
+    "static/media/doc-places-button-click.png": "/static/media/doc-places-button-click.6ea566fdba8b3ea9aab9.png",
+    "static/media/doc-go-click.png": "/static/media/doc-go-click.bb93cc6561178ffa61b7.png",
+    "static/media/doc-about-click.png": "/static/media/doc-about-click.976f7bda166e487a6b42.png",
+    "static/media/doc-search-click.png": "/static/media/doc-search-click.c10fd66e240eb1380939.png",
+    "static/media/weather-wizard-logo.png": "/static/media/weather-wizard-logo.552e45e3a1fac04246b9.png",
+    "static/media/warangal_icon.png": "/static/media/warangal_icon.6ec25720a6764cb8f5ee.png",
+    "static/media/dallas_icon.png": "/static/media/dallas_icon.7c72f036d806240e6340.png",
+    "static/media/svalbard_icon.png": "/static/media/svalbard_icon.ddca317bc9c789f3fde2.png",
+    "static/media/cherrapunji_icon.png": "/static/media/cherrapunji_icon.f0350a779bca323294cd.png",
+    "index.html": "/index.html",
+    "main.36377582.css.map": "/static/css/main.36377582.css.map",
+    "main.9e2cb592.js.map": "/static/js/main.9e2cb592.js.map",
+    "787.ef10e2cf.chunk.js.map": "/static/js/787.ef10e2cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36377582.css",
+    "static/js/main.9e2cb592.js"
+  ]
+}
